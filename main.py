@@ -25,7 +25,14 @@ def has_letter(password):
 def main():
     password = input("Введите пароль:")
     score = 0
-    functions = [is_very_long(password), has_digit(password), has_lower_letters(password), has_upper_letters(password), has_symbols(password), has_letter(password)]
+    functions = [
+        is_very_long(password),
+        has_digit(password), 
+        has_lower_letters(password), 
+        has_upper_letters(password), 
+        has_symbols(password), 
+        has_letter(password)
+    ]
     for function in functions:
         if function:
             score +=2
